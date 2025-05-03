@@ -1,11 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES6",
+    "target": "es6",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-  }
+  },
+  "include": [
+    "api",
+    "src"
+  ]
 }
