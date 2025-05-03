@@ -16,7 +16,8 @@
     "dev": "nodemon --exec ts-node src/app.ts",
     "ts:build": "rm -fr ./dist && tsc",
     "prestart": "npm run ts:build",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "build": "npm run ts:build"
   },
   "keywords": [],
   "author": "",
