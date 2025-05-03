@@ -8,6 +8,7 @@ const connection = mysql.createPool({
   user: process.env.REACT_APP_DB_USER,
   password: process.env.REACT_APP_DB_PASSWORD,
   database: process.env.REACT_APP_DB_DATABASE,
+  port: parseInt(process.env.REACT_APP_DB_PORT || '3306')
 });
 
 
