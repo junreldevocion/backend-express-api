@@ -4,12 +4,12 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const connection = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_DATABASE,
-  port: parseInt(process.env.DB_PORT || '3306')
+  host: process.env.REACT_APP_DB_HOST,
+  user: process.env.REACT_APP_DB_USER,
+  password: process.env.REACT_APP_DB_PASSWORD,
+  database: process.env.REACT_APP_DB_DATABASE,
 });
+
 
 export const createDatabaseTables = () => {
   const createUsersTableQuery = `

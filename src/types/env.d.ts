@@ -1,9 +1,8 @@
 declare namespace NodeJS {
   interface ProcessEnv {
-    DB_HOST: string;
-    DB_USER: string;
-    DB_PASSWORD: string;
-    DB_DATABASE: string;
-    DB_PORT: string;
+    REACT_APP_DB_HOST: string;
+    REACT_APP_DB_USER: string;
+    REACT_APP_DB_PASSWORD: string;
+    REACT_APP_DB_DATABASE: string;
   }
 }
